@@ -12,7 +12,6 @@ The HTTP part of the honeypot should have two pages available when started. The 
 ## Troubleshooting
 - Be sure the install the required libraries from the requirements.txt file with ` pip3 install -r <path to file> `
 - If using a port below 1024 you need to use ` sudo ` because all those are privileged ports. Which HTTP (80) and SSH (22) ports are.
-- A public/private key needs to be generated for the ssh honeypot before starting. This can be done with ` ssh-keygen -t rsa `.
 ## Convert Data to PDF
 N/A
 ## Notes

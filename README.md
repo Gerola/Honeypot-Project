@@ -6,15 +6,20 @@ This is a honeypot project that supports the following protocols.
 - Potentially more in the Future
 
 ## Run as SSH
-N/A
+To Run ` python3 insert_command ` <br><br>
+The SSH part of the honeypot should start when the above command is executed, given everything is installed and configured. The message <insertMessage> should display on the terminal when the honeypot starts successfully. It will log usernames and passwords attempted in one log file titled <insertName>, while the log file <insertName> will log the commands executed by a user when they successfully authenticate with the server.
+
 ## Run as HTTP
 To Run ` python3 insert_command ` <br><br>
 The HTTP part of the honeypot should have two pages available when started. The login and registration page. It should default to the login page when going to the webpage. When data is entered and submitted for either page, the data submitted will be written to the text file {insertNameFile}. It will log the username, password, IP, time and for the registration page the email the client entered.
+
 ## Troubleshooting
 - Be sure the install the required libraries from the requirements.txt file with ` pip3 install -r <path to file> `.
 - If using a port below 1024 you need to use ` sudo ` because all those are privileged ports. Which HTTP (80) and SSH (22) ports are.
 - Create a key with the command ` ssh-keygen -t rsa ` to have the server operate correctly.
+
 ## Convert Data to PDF
-N/A
+After data is collected from the honeypots run the command to get graphs from the data in a pdf file.
+
 ## Notes
 - The author is not responsible for anything that happens when running this honeypot. Use for legal purposes only and at own discretion.

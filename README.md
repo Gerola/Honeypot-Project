@@ -26,4 +26,4 @@ The HTTP part of the honeypot should have two pages available when started. The 
 After data is collected from the honeypots run the command to get graphs from the data in a pdf file.
 
 ## Notes
-- The author is not responsible for anything that happens when running this honeypot. Use for legal purposes only and at own discretion.
+- The author is not responsible for anything that happens when running this honeypot. Use for **educational** and **legal** purposes only.

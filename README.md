@@ -14,7 +14,7 @@ To Run ` python3 honeypot.py -SSH ` <br><br>
 The SSH part of the honeypot should start when the above command is executed, given everything is installed and configured. The message <insertMessage> should display on the terminal when the honeypot starts successfully. It will log usernames and passwords attempted in one log file titled <insertName>, while the log file <insertName> will log the commands executed by a user when they successfully authenticate with the server.
 
 ## Run as HTTP with arguments
-To Run ` python3 python3 honeypot.py -HTTP ` <br><br>
+To Run ` python3 honeypot.py -HTTP ` <br><br>
 The HTTP part of the honeypot should have two pages available when started. The login and registration page. It should default to the login page when going to the webpage. When data is entered and submitted for either page, the data submitted will be written to the text file {insertNameFile}. It will log the username, password, IP, time and for the registration page the email the client entered.
 
 ## Troubleshooting
@@ -25,5 +25,5 @@ The HTTP part of the honeypot should have two pages available when started. The 
 ## Convert Data to PDF
 After data is collected from the honeypots run the command to get graphs from the data in a pdf file.
 
-## Notes
+## Disclaimer
 - The author is not responsible for anything that happens when running this honeypot. Use for **educational** and **legal** purposes only.

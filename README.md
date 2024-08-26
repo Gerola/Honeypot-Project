@@ -6,7 +6,7 @@ This is a honeypot project that supports the following protocols.
 - Potentially more in the Future
 
 ## Run Interactive
-For the honeypot to be run interactive, which means the user will give it information as you go. Run the following command ` python3 honeypot.py -i `. With this command it will go through the steps needed to setup the honeypot in either HTTP or SSH mode. It will guide you through the steps and what needs to be supplied for the setup to succeed.
+For the honeypot to be run interactive, which means the user will give it information as you go. Run the following command ` python3 honeypot.py -i 1 `. With this command it will go through the steps needed to setup the honeypot in either HTTP or SSH mode. It will guide you through the steps and what needs to be supplied for the setup to succeed.
 
 
 ## Run as SSH with arguments

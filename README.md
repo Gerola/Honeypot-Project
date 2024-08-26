@@ -22,8 +22,8 @@ The HTTP part of the honeypot should have two pages available when started. The 
 - If using a port below 1024 you need to use ` sudo ` because all those are privileged ports. Which HTTP (80) and SSH (22) ports are
 - Create a key with the command ` ssh-keygen -t rsa ` to have the server operate correctly when run in SSH mode
 
-## Convert Data to PDF
-After data is collected from the honeypots run the command to get graphs from the data in a pdf file.
+## Convert Data to PDF File
+After data is collected from the honeypots run the command ` python3 honeypot -o 1 ` to get the pdf file with the graphs generated from the available data.
 
 ## Disclaimer
 - The author is not responsible for anything that happens when running this honeypot. Use for **educational** and **legal** purposes only.

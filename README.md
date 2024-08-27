@@ -1,5 +1,4 @@
-# Honeypot (In Progress)
-
+# Honeypot
 This is a honeypot project that supports the following protocols.
 - SSH
 - HTTP

@@ -1,1 +1,95 @@
 
+label{
+    font-size: 20px;
+}
+
+.headings
+{
+    font-size: 45px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.inputs
+{
+    align-content:center;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.message
+{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    color: red;
+}
+
+.user
+{
+    margin: 10px;
+    padding: 10px;
+    border-color: black;
+    border-radius: 10px;
+    border-style:solid;
+    font-family: 'Courier New', Courier, monospace;
+}   
+
+.registeraccount
+{
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    padding-top: 18px;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    color: black;
+}
+
+.passwd
+{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: black;
+    border-style: none;
+    border-style:solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+.email
+{
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border-color: black;
+    border-style: none;
+    border-style:solid;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.emails
+{
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.sub
+{
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    border-style: none;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.sub:hover
+{
+    background-color: green;
+    cursor: pointer;
+}
+.registermessage
+{
+    color: green;
+    text-align: center;
+}

@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/static/styles.css" rel="stylesheet">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
-    <h1 class="headings">Login</h1>
-    <p class="message">{{ message }}</p>
-    
-    <form method="POST" action="/login" class="inputs">
-           
+    <h1 class="headings">Register Account</h1>
+      <p class="registermessage">{{ message }}</p>
+    <form method="POST" action="/register" class="inputs">
+
+        <label for="username">Email:</label><br>
+        <p class="emails">Choose an email that you check often</p>
+        <input type="email" id="email" name="email" placeholder="Email" class="email" required="True"><br>
+        
         <label for="username">Username:</label><br>
         <input type="text" id="username" name="username" placeholder="Username" class="user" required="True"><br>
         
@@ -20,6 +23,7 @@
         
         <input type="submit" value="SUBMIT" class="sub">
     </form>
-    <a href="/register" class="registeraccount">Register Account</a>
+    <a href="/login" class="registeraccount">Login</a>
+
 </body>
 </html>

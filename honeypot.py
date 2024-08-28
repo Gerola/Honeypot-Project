@@ -24,7 +24,7 @@ parser.add_argument('-i','--interactive',metavar="Interactive",type=int,default=
 #Interactive setup
 def interactive_setup():
     http_or_ssh = 0
-    port = 0
+    port = '0'
     username = ""
     password = ""
     
@@ -32,12 +32,12 @@ def interactive_setup():
         http_or_ssh = input("What honeypot do you want to run?\n(0) HTTP\n(1) SSH\n")
     
     if http_or_ssh == '0':
-        while(int(port) < 20 or int(port) > 65000):
+        while(port.isdigit() == False or int(port) < 20 or int(port) > 65000):
             port = input("What port do you want the server to run on? (80 default)\n")
         print(f"Running the HTTP honeypot on Port {port}")   
         run_website(port)
     elif http_or_ssh == '1':
-        while(int(port) < 20 or int(port) > 65000):
+        while(port.isdigit() == False or int(port) < 20 or int(port) > 65000):
             port = input("What port do you want the server to run on? (22 default)\n")
         while(username == ""):
             username = input("What do you want the username to be?: ")

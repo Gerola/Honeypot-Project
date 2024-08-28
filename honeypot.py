@@ -34,6 +34,7 @@ def interactive_setup():
     if http_or_ssh == '0':
         while(int(port) < 20 or int(port) > 65000):
             port = input("What port do you want the server to run on? (80 default)\n")
+        print(f"Running the HTTP honeypot on Port {port}")   
         run_website(port)
     elif http_or_ssh == '1':
         while(int(port) < 20 or int(port) > 65000):
@@ -42,6 +43,7 @@ def interactive_setup():
             username = input("What do you want the username to be?: ")
         while(password == ""):
             password = input("What do you want the password to be?: ")
+        print(f"Running the SSH honeypot on Port {port} with credentials {username} / {password}")
         ssh(int(port),username,password)
 
 def selection():
@@ -55,10 +57,12 @@ def selection():
         if args.SSH == 0:
             print("Please choose a honeypot")
         else:
+            print(f"Running the SSH honeypot on port {args.SSHport} with credentials {args.username} / {args.password}")
             ssh(args.SSHport,args.username,args.password)
     elif args.SSH != 0:
         print("Please choose one honeypot")
     else:
+        print(f"Running the HTTP honeypot on port {args.HTTPport}")
         run_website(args.HTTPport)
 
 if __name__ == '__main__':

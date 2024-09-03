@@ -144,10 +144,10 @@ def handle_clients(client,IP,username,password):
     
         channel = t.accept(100)
         if channel == None:
-            sys.exit()
+            return
         server.event.wait(15)#wait for a certain amount of time 
         if not server.event.is_set():#if not set, which would be the shell request setting it then exit
-            sys.exit(1)
+            return
 
         shell_environment(channel,IP)#start the emulated shell to try and trick the client
 
